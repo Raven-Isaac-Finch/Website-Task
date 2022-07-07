@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatan</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="d-flex">
+            <div id="burger-menu">
+                <img src="./images/logo.png" alt="vatanlogo" id="vatan-logo">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Kategoriler</span>
+                </div>
+            </div>
+            <div id="search-menu">
+                <input type="search" placeholder="Ürün Ara" id="search-bar">
+                <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+            </div>
+            <div id="user-menu" class="d-flex">
+                <p>Üyelik</p>
+                <i class="fa-solid fa-circle-user"></i>
+                <p>Sepetim</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-notif"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="slider-container">
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                  <div class="swiper-slide d-flex">Product</div>
+                </div>
+                <div class="swiper-button-next swiper-arrow"><i class="fa-solid fa-caret-right"></i></div>
+                <div class="swiper-button-prev swiper-arrow"><i class="fa-solid fa-caret-left"></i></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="related-products-container">
+            <div class="titles">
+                <h2>Öne Çıkan Ürünler</h2>
+                <div class="d-flex title-right more-related">
+                    <h5 class="more-related">TÜM ÖNE ÇIKANLAR</h5>
+                    <i class="fa-solid fa-right-long more-related"></i>
+                </div>
+            </div>
+            <div class="related-card-container">
+                <!-- RELATED PRODUCT CARD -->
+                <!-- RELATED PRODUCT CARD -->
+                <!-- RELATED PRODUCT CARD -->
+            </div>
+        </div>
+        <div class="bestseller-products-container">
+            <div class="titles">
+                <h2>Çok Satanlar</h2>
+                <div class="d-flex title-right more-bestseller">
+                    <h5 class="more-bestseller">TÜM ÇOK SATANLAR</h5>
+                    <i class="fa-solid fa-right-long more-bestseller"></i>
+                </div>
+            </div>
+            <div class="bestseller-card-container">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper" id="bestseller-card-slider">
+                        <!-- BEST_SELLER PRODUCT CARD -->
+                        <!-- BEST_SELLER PRODUCT CARD -->
+                        <!-- BEST_SELLER PRODUCT CARD -->
+                    </div>
+                    <div class="swiper-button-next bestseller-swiper-arrow"><i class="fa-solid fa-caret-right"></i></div>
+                    <div class="swiper-button-prev bestseller-swiper-arrow"><i class="fa-solid fa-caret-left"></i></div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <div class="main-strip d-flex">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-google-plus-g"></i>
+    </div>
+    <footer>
+        <div class="kurumsal">
+            <p class="footer-titles">KURUMSAL</p>
+            <div class="list-holders">
+                <ul>
+                    <li>Hakkımızda</li>
+                    <li>Müşteri Hizmetleri</li>
+                    <li>Sipariş Aşamaları</li>
+                    <li>Sıkça Sorulan Sorular</li>
+                    <li>İnsan Kaynakları</li>
+                    <li>Gizlilik Politikası</li>
+                </ul>
+                <ul>
+                    <li>İletişim</li>
+                    <li>Vatan Card</li>
+                    <li>Servis Takip Formu</li>
+                    <li>Mağazalar</li>
+                    <li>İşlem Rehberi</li>
+                </ul>
+            </div>
+        </div>
+        <div class="kategoriler">
+            <p class="footer-titles">KATEGORİLER</p>
+            <div class="list-holders">
+                <ul>
+                    <li>Bilgisayar</li>
+                    <li>Cep Telefonu</li>
+                    <li>Tablet PC</li>
+                    <li>Akıllı Saat</li>
+                    <li>Vestel TV</li>
+                    <li>Oyun Bilgisayarı</li>
+                </ul>
+                <ul>
+                    <li>Küçük Ev Aletleri</li>
+                    <li>Kişisel Bakım Ürünleri</li>
+                    <li>Elektrikli Süpürge</li>
+                    <li>Ütü</li>
+                    <li>Masaüstü Bilgisayar</li>
+                    <li>Sabit Diskler</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ozel-urunler">
+            <p class="footer-titles">ÖZEL ÜRÜNLER</p>
+            <ul>
+                <li>iPhone 7</li>
+                <li>iPhone 6S</li>
+                <li>iPhone 5S</li>
+                <li>iPhone SE</li>
+                <li>General Mobile 5 Plus</li>
+                <li>Galaxy S7</li>
+                <li>Note 5</li>
+                <li>Galaxy S6</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
