@@ -119,7 +119,7 @@ function displayBestSellerProducts(bestSellerCards) {
             </div>
             <p class="product-price">₺${product.discount == 0 ? product.price : product.dprice}</p>
             <div class="btn-container d-flex">
-                <button class="samedayshipping">BUGÜN KARGODA</button>
+                <button class="samedayshipping">${product.samedayshipping ? "BUGUN KARGODA" : "YARIN KARGODA"}</button>
             </div>
             <div class="hovered-view d-flex">
                 <i class="fa-solid fa-right-left"></i>
@@ -154,3 +154,12 @@ function addToCart(e) {
     
   }
 }
+
+//Dropdown Menu-------------------------------------------
+const select = document.querySelector('.select');
+const menu = document.querySelector('.menu');
+
+select.addEventListener('click', () => {
+  menu.classList.toggle('menu-open');
+  select.classList.toggle('select-highlight');
+})
